@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="menu-container">
+          <i class="fa fa-bars menu" aria-hidden="true"></i>
+          <h1 class="logo">sneakers</h1>
+        </div>
+        <div class="menu-card">
+
+          <div class="close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </div>
+          <ul class="links">
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Men</a></li>
+            <li><a href="#">Women</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+  
+          </ul>
+        </div>
+        <div class="profile">
+          <img class="cart" src="./images/icon-cart.svg" alt="cart">
+          <div id="items">3</div>
+          <img class="avatar" src="./images/image-avatar.png" alt="avatar">
+        </div>
+        
+       
+      </nav>
+     
+    </div>
+  </header>
+
+  <section class="hero">
+      <div class="container">
+        <div class="wrapper">
+          <div class="hero-image">
+            <img id="1" class="product" src="./images/image-product-1.jpg" alt="">
+            <img id="2" class="product "  src="./images/image-product-2.jpg" alt="">
+            <img id="3" class="product "  src="./images/image-product-3.jpg" alt="">
+            <img id="4" class="product "  src="./images/image-product-4.jpg" alt="">
+          </div>
+          <div class="hero-image5">
+            <img id="1" class="product" src="./images/image-product-1.jpg" alt="">
+            <img id="2" class="product "  src="./images/image-product-2.jpg" alt="">
+            <img id="3" class="product "  src="./images/image-product-3.jpg" alt="">
+            <img id="4" class="product "  src="./images/image-product-4.jpg" alt="">
+          </div>
+          <div class="arrow left">
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+          </div>
+          <div class="arrow right">
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+          </div>
+          <div class="product-details">
+            <h3 class="company-name">Sneaker Company</h3>
+            <p class="heading">
+              Fall Limited Edition Sneakers
+            </p>
+            <small>
+              These low-profile sneakers are your perfect casual wear companion. Featuring a
+              durable rubber outer sole, they’ll withstand everything the weather  can offer.
+            </small>
+            <div class="price-card">
+              <div class="price">
+                <p class="item-price">$125.00</p>
+                <div class="discount">
+                  50%
+                </div>
+              </div>
+              <div class="discount-price">
+                $250.00
+              </div>
+            </div>
+            <div class="flex">
+              <div class="quantity-card">
+                <i class="fa fa-minus decrease" aria-hidden="true"></i>
+                <span class="quantity">0</span>
+                  <i class="fa fa-plus increase" aria-hidden="true"></i>
+              </div>
+              <div class="addtocart">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <p>Add to cart</p>
+              </div>
+            </div>
+          
+            </div>
+          </div>
+          <div class="basket">
+            <h3>Cart</h3>
+            <div class="divider"></div>
+            <div class="text">
+              <span >Your cart is empty</span>
+            </div>
+          
+            <div class="purchase">
+              <img src="./images/image-product-1.jpg" alt="">
+              <div class="purchase-details">
+                <small>Autumn Limited Edition..</small>
+                <span><span class="item-price">$125</span >X<span id="quantities">0</span><span id="total">375</span></span>
+          
+              </div>
+              <i class="fa fa-trash delete" aria-hidden="true"></i>
+            </div>
+            <div class="checkout">
+              <h3>Checkout</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </section>
+
+  <div class="container1">
+    <div class="angles">
+      <div class="angle1">
+        <img id="first" class="product12" data-id="1" src="./images/image-product-1.jpg" alt="">      
+      </div>
+      <div class="angle1">
+        <img id="second" class="product12 " data-id="2" src="./images/image-product-2.jpg" alt="">
+      </div>
+      <div class="angle1">
+        <img id="third" class="product12 " data-id="3" src="./images/image-product-3.jpg" alt="">
+      </div>
+      <div class="angle1">
+        <img id="fourth" class="product12 "data-id="4" src="./images/image-product-4.jpg" alt="">
+      </div>
+    </div>    
+    
+  </div>
+
+  <div class="lightBox">
+    <div class="container">
+
+      <div class="lightclose">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+  
+      <div class="rotate">
+        <div class="hero-image1 below">
+          <img id="1" class="product2 " src="./images/image-product-1.jpg" alt="">
+          <img id="2" class="product2 "  src="./images/image-product-2.jpg" alt="">
+          <img id="3" class="product2 "  src="./images/image-product-3.jpg" alt="">
+          <img id="4" class="product2 "  src="./images/image-product-4.jpg" alt="">
+        
+        </div>
+       
+      </div>
+ 
+      <div class="arrow left1" onclick="plusSlide(-1)">
+        <i class="fa fa-chevron-left"  aria-hidden="true"></i>
+      </div>
+      <div class="arrow right1" onclick="plusSlide(1)">
+        <i class="fa fa-chevron-right"   aria-hidden="true"></i>
+      </div>
+    
+      
+     
+      <div class="container1">
+        <div class="angles1">
+          <div class="angle12">
+            <img id="first" class="product13" onclick="currentSlide(1)" data-id="1" src="./images/image-product-1.jpg" alt="">
+          </div>
+          <div class="angle12">
+            <img id="second" class="product13" onclick="currentSlide(2)" data-id="2" src="./images/image-product-2.jpg" alt="">
+          </div>
+          <div class="angle12">
+            <img id="third" class="product13" onclick="currentSlide(3)" data-id="3" src="./images/image-product-3.jpg" alt="">
+          </div>
+          <div class="angle12">
+            <img id="fourth" class="product13" onclick="currentSlide(4)" data-id="4" src="./images/image-product-4.jpg" alt="">
+          </div>
+        </div>
+    </div>
+      
+    </div>
+
+    
+
+
+
+
+  </div>
+  
+
+ 
+ 
+  
+
+  <script src="app.js"></script>
+
+
+
+
+  <!-- Collections
+  Men
+  Women
+  About
+  Contact
+
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart -->
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
